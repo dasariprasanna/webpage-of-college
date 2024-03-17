@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VIGNAN'S NIRULA</title>
+        <link rel="stylesheet" href="vignan1style.css">
+    </head>
+    <body>
+        <img src="https://www.vignannirula.org/img/colglogo.jpg"width="100%" height="auto"></img>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">About Us</a>
+              <div class="dropdown-content">
+                <a href="#">Chairman</a>
+                <a href="#">Principal</a>
+                <a href="#">Governing Body Members</a>
+                <a href="#">Management</a>
+                <a href="#">Vision & Mission</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Admissions</a>
+              <div class="dropdown-content">
+                <a href="#">B.Tech</a>
+                <a href="#">M.Tech</a>
+                <a href="#">M.B.A</a>
+                <a href="#">Fee Structure</a>
+                <a href="#">Contacts</a>
+                
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Academics</a>
+              <div class="dropdown-content">
+                <a href="#">Academic Regulations</a>
+                <a href="#">Academic Calender</a>
+                <a href="#">Programs Offered</a>
+                <a href="#">External Exam</a>
+                <a href="#">Curriculum Syllabus</a>
+                <a href="#">List Of Holidays</a>
+                <a href="#">Outcome based Education</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Departments</a>
+              <div class="dropdown-content">
+                <a href="#">Computer Science and Engineering(CSE)</a>
+                <a href="#">Computer Science and Engineering(Artificial Intelligence and Machine Learning)(CSM)</a>
+                <a href="#">Computer Science and Engineering(Data Science)(CSD)</a>
+                <a href="#">Information Technology(IT)</a>
+                <a href="#">Electronics and Communication Engineering(ECE)</a>
+                <a href="#">Electronics & Electrical Engineering(EEE)</a>
+                <a href="#">Master of Business Administration(MBA)</a>
+              </div>
+            </li>
+            <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Infrastructure</a>
+            <div class="dropdown-content">
+              <a href="#">Library</a>
+              <a href="#">Labs</a>
+              <a href="#">Hostel</a>
+              <a href="#">Campus Buildings</a>
+              <a href="#">Transport</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Activities</a>
+            <div class="dropdown-content">
+              <a href="#">NSS</a>
+              <a href="#">NCC</a>
+              <a href="#">Extra-Curriclars</a>
+              <a href="#">Cultural Activities</a>
+            </div>
+          </li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Examination</a>
+            <div class="dropdown-content">
+              <a href="#">Notifications</a>
+              <a href="#">Contact Us</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Placements</a>
+            <div class="dropdown-content">
+              <a href="#">Placement Cell</a>
+              <a href="#">Incharges</a>
+              <a href="#">Track Record</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Social Media</a>
+            <div class="dropdown-content">
+              <a href="#">Instagram </a>
+              <a href="#">Twitter</a>
+              <a href="#">Linkedin</a>
+              <a href="#">Facebook</a>
+              <a href="#">YouTube</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Contact Us</a>
+            <div class="dropdown-content"></div>
+          </li>
+        </ul>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="https://vignannirula.org/img/cb-0.jpg" style="width:100%" height="auto">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="https://www.collegebatch.com/static/clg-gallery/vignans-nirula-institute-of-technology-science-for-women-guntur-275040.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="https://www.vidyavision.com/CollegeUploads/Photos/2022-31-3-17-05-57_VNITSW%20998%20P.jpg" style="width:100%">
+ 
+</div>
+
+<div><a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+   </div>
+
+<br>
+
+<div style="text-align:center">
+  <span  onclick="currentSlide(1)"></span> 
+  <span  onclick="currentSlide(2)"></span> 
+  <span  onclick="currentSlide(3)"></span> 
+  <span  onclick="currentSlide(4)"></span>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+</body>
+</html>
